@@ -1,13 +1,5 @@
-html{
-    height: it-fill-available;
-}
 body{
     margin:0cm;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    height: -webkit-fill-available;
 }
 .main{
     background-color: #fcf0f4;
