@@ -1,0 +1,47 @@
+body{
+    margin:0cm;
+    overflow-x: hidden;
+}
+.main{
+    background-color: #fcf0f4;
+    position: fixed;
+    z-index: 999;
+    display: block;
+    width: 100%;
+}
+#headerlogo{
+    margin-right: 2cm;
+    float: left;
+    padding-left: 3cm;
+    display: block;
+    height: 2.7cm;
+}
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 1.2cm;
+}
+.navbar a{
+    color: #ec699f;
+    text-decoration: none;
+    padding: 15px;
+    display: inline;
+}
+.navbar a:hover{
+    cursor: pointer;
+    color: hsl(335, 78%, 47%);
+}
+.navbar li{
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px;
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contatos{
+    padding-left:10cm;
+}
