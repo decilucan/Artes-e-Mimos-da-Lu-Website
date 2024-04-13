@@ -1,5 +1,6 @@
 body{
     margin:0cm;
+    overflow-x: hidden;
 }
 .main{
     background-color: #fcf0f4;
@@ -45,10 +46,10 @@ body{
     padding-left:10cm;
 }
 #mainimage{
-    padding-left: 6cm;
+    padding-left: 7cm;
     padding-right: 9cm;
     margin-top: 2.7cm;
-    width: 70%;
+    width: 62.5%;
     height: 16cm;
     display: inline-block;
     background-color: #ec699f;
@@ -83,7 +84,7 @@ body{
     display: flex;
     flex-direction: row;
     position: relative;
-    bottom: 22.5cm;
+    bottom: 23.7cm;
     background-color: hsl(0, 0%, 85%);
 }
 .box{
@@ -92,17 +93,20 @@ body{
     text-align: center;
     border-radius: 1cm;
     color: hsl(335, 48%, 58%);
+    position: relative;
+    bottom: 0.6cm;
+    right: 0.5cm;
 }
 #box1{
     background-color: hsl(340, 67%, 96%);
     margin-left: 7cm;
-    height: 15.4cm;
+    height: 14.4cm;
     font-family: Arial, Helvetica, sans-serif;
 }
 #box2{
     background-color: hsl(340, 67%, 96%);
     margin-left: 3cm;
-    height: 15.4cm;
+    height: 14.4cm;
     font-family: Arial, Helvetica, sans-serif;
 }
 #img1{
@@ -114,22 +118,22 @@ body{
     border-radius: 0.5cm;
 }
 #waves1{
-    width: 100cm;
+    width: 45.03cm;
     height: 6cm;
     position: relative;
-    bottom: 12cm;
+    bottom: 12.5cm;
     right: 8cm;
 }
 #waves2{
-    width: 100cm;
+    width: 45.03cm;
     height: 10cm;
     position: relative;
-    top: 1.7cm;
+    bottom: 0.5cm;
     right: 8cm;
     transform: rotate(180deg);
 }
 .botão{
-    margin-top: 1cm;
+    margin-top: cm;
     border-radius: 5px;
     width: 7cm;
     border-color: #fcf0f400;
@@ -139,9 +143,6 @@ body{
 .botão:hover{
     cursor: pointer;
 }
-#botão2{
-    margin-top: 0.5cm;
-}
 .texto{
     color: #ec699f;
     margin-left: 1cm;
@@ -149,6 +150,9 @@ body{
 }
 .sobrenós{
     margin-left: 3cm;
+    position: relative; 
+    bottom: 1cm;
+
 }
 #img3{
     width: 10cm;
