@@ -1,5 +1,13 @@
+html{
+    height: it-fill-available;
+}
 body{
     margin:0cm;
+    display: flex;
+    flex-direction: column;
+    max-width: 1800px;
+    height: 100vh;
+    height: -webkit-fill-available;
 }
 .main{
     background-color: #fcf0f4;
