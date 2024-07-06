@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: opacity 0.2s ease;
+}
+
+a:hover{
+    opacity: 0.7 !important;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    background-color: #fcf0f4;
+    position: sticky;
+    top: 0;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo,
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img,
+footer .logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+nav ul,
+footer .top ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+nav .social-links{
+    font-size: 26px;
+}
+
+.featured{
+    padding: 40px 290px 0;
+}
+
+.featured .item,
+.works-list .item{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 120px;
+    padding-bottom: 30px;
+}
+
+.featured .item img,
+.works-list .item img{
+    width: 320px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+.featured .item .details h3,
+.works-list .item h3{
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.featured .item .details p,
+.works-list .item .details p{
+    width: 700px;
+    text-align: justify;
+}
+
+footer{
+    background-color: #deebee;
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .top,
+footer .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .top .social-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 26px;
+}
+
+footer .separator{
+    width: 100%;
+    height: 1px;
+    background-color: #282938;
+    margin: 30px 0 20px;
+}
+
+footer .bottom p{
+    font-size: 15px;
+}
+
+footer .bottom .links p{
+    font-size: 15px;
+    margin-left: 14px;
+    margin-right: px;
+}
+
+footer .logo img{
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .main .left h5{
+        font-size: 18px;
+    }
+
+    .main .left h3{
+        font-size: 36px;
+    }
+
+    .main .left p{
+        font-size: 18px;
+    }
+
+    .main .right img{
+        width: 380px;
+    }
+
+    .about .left img{
+        width: 370px;
+    }
+
+    .about .right p{
+        font-size: 15px;
+    }
+
+    .instruções .header h3,
+
+    footer .top ul{
+        gap: 20px;
+    }
+
+    .featured,
+    .separator{
+        padding: 40px 40px 0;
+    }
+
+    .featured .item .details p,
+    .works-list .item .details p{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav button{
+        display: none;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+
+    .about{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .instruções .intru-items{
+        gap: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .instruções .intru-items .item{
+        width: 48%;
+    }
+
+    footer .top ul{
+        display: none;
+    }
+
+    .featured,
+    .separator{
+        padding: 40px 20px 0;
+    }
+
+    .featured .item,
+    .works-list .item{
+        flex-direction: column;
+        padding: 0 20px 30px;
+    }
+
+    .featured .item img,
+    .works-list .item img{
+        width: 100%;
+        height: auto;
+    }
+
+    .featured .item .details h3,
+    .works-list .details .item h3{
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .featured .item .details .item-info .year-badge,
+    .works-list .item .details .item-info .year-badge{
+        font-size: 12px;
+    }
+
+    .featured .item .details .item-info h4,
+    .works-list .item .details .item-info h4{
+        font-size: 15px;
+    }
+
+    .featured .item .details p,
+    .works-list .item .details p{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    nav{
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+
+    nav ul{
+        display: none;
+        margin-right: 310px;
+    }
+
+    nav.open .logo{
+        display: none;
+    }
+
+    nav.open ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav button#menuButton{
+        display: flex;
+    }
+
+    .main{
+        padding: 42px;
+    }
+
+    .about{
+        padding: 85px 42px;
+    }
+
+    .instruções{
+        padding: 60px 42px;
+    }
+
+    .instruções .intru-items{
+        gap: 18px;
+    }
+
+    footer{
+        padding: 85px 42px;
+    }
+
+    footer .bottom{
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    nav .logo a{
+        font-size: 18px;
+    }
+
+    .main .left h3{
+        font-size: 32px;
+    }
+
+    .main .left p{
+        font-size: 16px;
+    }
+
+    .main .left button{
+        width: 100%;
+    }
+
+    .instruções .header button{
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    .instruções .intru-items .item{
+        width: 80%;
+    }
+
+}
